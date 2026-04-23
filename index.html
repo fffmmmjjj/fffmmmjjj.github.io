@@ -4,52 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junseo Jang - GitHub.io</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.8;
+        }
+        
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
         }
-        h1 {
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             text-align: center;
-            color: #333;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
         }
+        
+        .header:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 35px;
+            margin-bottom: 25px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+        }
+        
         h2 {
-            color: #555;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            font-size: 1.8em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
+        
         ul {
             list-style-type: none;
             padding: 0;
         }
+        
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            padding: 12px 15px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-size: 1.05em;
+            color: #333;
         }
-    </style>
+        
+        li:hover {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+            border-left-color: #764ba2;
+            padding-left: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .section {
+                padding: 25px 20px;
+            }
+        }
+    </link>
 </head>
 <body>
-    <h1>👋 Hello, I'm Junseo Jang</h1>
-    <h1>👋 Hello, I'm 장준서</h1>
+    <div class="container">
+        <div class="header">
+            <h1>👋 Hello, I'm Junseo Jang</h1>
+            <h1>👋 안녕하세요, 장준서입니다</h1>
+        </div>
 
-    <h2>🧑‍🎓 About Me</h2>
-    <ul>
-        <li>I'm a high school student</li>
-        <li>I want to make games 🎮</li>
-        <li>I like the artist SPYAIR 🎧</li>
-        <li>고등학생입니다</li>
-        <li>게임을 만들고 싶습니다 🎮</li>
-        <li>음악가 SPYAIR를 좋아합니다 🎧</li>
-    </ul>
+        <div class="section">
+            <h2>🧑‍🎓 About Me</h2>
+            <ul>
+                <li>I'm a high school student</li>
+                <li>I want to make games 🎮</li>
+                <li>I like the artist SPYAIR 🎧</li>
+                <li>고등학생입니다</li>
+                <li>게임을 만들고 싶습니다 🎮</li>
+                <li>음악가 SPYAIR를 좋아합니다 🎧</li>
+            </ul>
+        </div>
 
-    <h2>💻 Interests</h2>
-    <ul>
-        <li>Game development</li>
-        <li>Programming</li>
-        <li>게임 개발</li>
-        <li>프로그래밍</li>
-    </ul>
+        <div class="section">
+            <h2>💻 Interests</h2>
+            <ul>
+                <li>Game development</li>
+                <li>Programming</li>
+                <li>게임 개발</li>
+                <li>프로그래밍</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
